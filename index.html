@@ -78,8 +78,8 @@
                 <div class="experience__time">Sep 2019 — Present</div>
                 <div class="experience__location">Bengaluru, India</div>
               </div>
-              <button class="button" onclick="myFunction()">My work</button>
-              <div id="myDIV" style="display:none">
+              <button class="button" onclick="myMANHWork()">My work</button>
+              <div id="myMANHDIV" style="display:none">
                 - Domain knowledge introduction to Warehouse Management System. <br/>
                 - Currently working on SCALE warehouse application. <br/>
               </div>
@@ -89,8 +89,8 @@
                 <div class="experience__time">Sep 2017 — Sep 2019</div>
                 <div class="experience__location">Bengaluru, India</div>
               </div>
-              <button class="button" onclick="myFunction()">My work</button>
-              <div id="myDIV" style="display:none">
+              <button class="button" onclick="myCDACWork()">My work</button>
+              <div id="myCDACDIV" style="display:none">
                 - Application Development using Microsoft Technologies. <br/>
                 - Development of Service Oriented Architecture using WEB API based http services.<br/>
                 - End-to-end role in SDLC involving Software Design,Analysis,Development,Testing of web and windows form application.<br/>
@@ -204,8 +204,17 @@
       </div>
     </section>
     <script>
-    function myFunction() {
-    var x = document.getElementById('myDIV');
+    function myMANHWork() {
+    var x = document.getElementById('myMANHDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    }
+	    
+    function myCDACWork() {
+    var x = document.getElementById('myCDACDIV');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
