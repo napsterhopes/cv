@@ -73,10 +73,20 @@
               </span>
             </h2>
             <div class="content__inner">
-			  <div class="experience">
+	       <div class="experience">
+                <div class="meta-title"><a href="https://www.walmart.com/" target = "_blank">Walmart</a></div>
+                <div class="experience__role">Software Engineer III</div>
+                <div class="experience__time">May 2021 — Present</div>
+                <div class="experience__location">Bengaluru, India</div>
+              </div>
+              <button class="button" onclick="myWalmartWork()">My work</button>
+              <div id="myWalmartDIV" style="display:none">
+                - Working on Walmart's Pharmacy System Connexus.
+              </div>
+	      <div class="experience">
                 <div class="meta-title"><a href="https://www.manh.com/" target = "_blank">Manhattan Associates</a></div>
-                <!-- <div class="experience__role">Technical Analyst</div> -->
-                <div class="experience__time">Sep 2019 — Present</div>
+                <div class="experience__role">Software Engineer</div>
+                <div class="experience__time">Sep 2019 — May 2021</div>
                 <div class="experience__location">Bengaluru, India</div>
               </div>
               <button class="button" onclick="myMANHWork()">My work</button>
@@ -116,10 +126,28 @@
               </span>
             </h2>
             <div class="content__inner">
+	      <div class="project">
+                <div class="meta-title">Manhattan SCALE</div>
+                <div class="project__description">
+			• End to end role in developing extensions for popular clients e.g DHL,Hermes of Paris,Chanel,etc across GEOs.<br>
+			• Code troubleshooting and bug fixes for production environment and on-site deployments. <br>
+			• Development of quick fixes,data correction and handling work stoppage issues.<br></div>
+              </div>
               <div class="project">
                 <div class="meta-title">Kaveri Online Services</div>
                 <div class="project__description">A 3-Tier,3-Layer Web Application that provides interface to the citizens of Karnataka for Document Registration,Property Valuation,etc.<br></div>
               </div>
+		
+		    <div class="project">
+                <div class="meta-title">Image Gallery</div>
+                <div class="project__description">Image Gallery Portal using Angular in Front End and Net Core as Backend.</div>
+              <br /><I>Available on <U><a href="https://github.com/napsterhopes/apps/tree/main/Image%20Gallery%20Using%20Angular10%20and%20.NET%20Core%203.1/FrontEnd" target="_blank">Image Gallery Portal</a></U></I>
+            </div>
+		      <div class="project">
+                <div class="meta-title">Jewelry Shopping Portal</div>
+                <div class="project__description">Jewelry Estimation application using React in Front End and Net Core as Backend.</div>
+              <br /><I>Available on <U><a href="https://github.com/napsterhopes/ReactNetCore/tree/main/SiemensTaskReactNetCore" target="_blank">https://github.com/napsterhopes/ReactNetCore/tree/main/SiemensTaskReactNetCore</a></U></I>
+            </div>
               <div class="project">
                 <div class="meta-title">Diagnostic Tool</div>
                 <div class="project__description">Winform Application for monitoring services running over the network. </br> The Application fetches HTTP status code,parse it and acknowledges whether service is accessible or not.</div>
@@ -206,6 +234,14 @@
       </div>
     </section>
     <script>
+    function myWalmartWork() {
+    var x = document.getElementById('myWalmartDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    }
     function myMANHWork() {
     var x = document.getElementById('myMANHDIV');
     if (x.style.display === 'none') {
